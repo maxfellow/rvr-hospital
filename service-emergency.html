@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Emergency Medicine — RVR Super Speciality Centre</title>
+<meta name="description" content="RVR Emergency Medicine department — 24/7 Emergency Care. Advanced care in Mangalore.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+<style>
+:root{--g:#1a6644;--m:#3ecb96;--p:#f7f4ef;--w:#fff;--k:#0e0e0e;--d:#8a8680;--wa:#e8e3d8;}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:16px;scroll-behavior:smooth}
+body{background:var(--w);color:var(--k);font-family:'DM Sans',sans-serif;font-weight:300;overflow-x:hidden;cursor:none}
+::selection{background:var(--g);color:#fff}
+#dot{position:fixed;width:7px;height:7px;background:var(--g);border-radius:50%;pointer-events:none;z-index:9999;top:0;left:0;transform:translate(-50%,-50%);will-change:left,top}
+#ring{position:fixed;width:38px;height:38px;border:1px solid rgba(26,102,68,.22);border-radius:50%;pointer-events:none;z-index:9998;top:0;left:0;transform:translate(-50%,-50%);transition:width .3s,height .3s,border-color .3s;will-change:left,top}
+.hov #ring{width:56px;height:56px;border-color:rgba(62,203,150,.4)}
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes wUp{from{transform:translateY(108%)}to{transform:translateY(0)}}
+@keyframes roll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s ease}
+.reveal.on{opacity:1;transform:none}
+.reveal-l{opacity:0;transform:translateX(-22px);transition:opacity .65s ease,transform .65s ease}
+.reveal-l.on{opacity:1;transform:none}
+.reveal-r{opacity:0;transform:translateX(22px);transition:opacity .65s ease,transform .65s ease}
+.reveal-r.on{opacity:1;transform:none}
+nav{position:fixed;top:0;left:0;right:0;z-index:500;display:flex;align-items:center;justify-content:space-between;padding:1.5rem 3rem;transition:background .4s,border-color .4s}
+nav.sc{background:rgba(247,244,239,.96);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid rgba(14,14,14,.07)}
+.nicon{width:36px;height:36px;display:block;color:var(--g)}
+.nright{display:flex;align-items:center;gap:2.5rem}
+.na{font-size:.57rem;letter-spacing:.18em;text-transform:uppercase;color:var(--d);text-decoration:none;transition:color .25s;font-family:'DM Sans',sans-serif}
+.na:hover,.na.act{color:var(--g)}
+.nb{font-size:.57rem;letter-spacing:.18em;text-transform:uppercase;color:#fff;background:var(--g);border:none;padding:.52rem 1.3rem;cursor:none;font-family:'DM Sans',sans-serif;font-weight:500;transition:background .25s;text-decoration:none;display:inline-block}
+.nb:hover{background:var(--k)}
+.strip{background:var(--k);padding:.8rem 0;overflow:hidden;white-space:nowrap}
+.strip-in{display:inline-flex;animation:roll 32s linear infinite}
+.si{display:inline-flex;align-items:center;gap:1.2rem;padding:0 1.8rem;font-size:.55rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.28)}
+.si .d{color:var(--m);font-size:.38rem}
+footer{background:var(--k);padding:3rem;display:grid;grid-template-columns:1fr 1fr 1fr;gap:3rem;align-items:start}
+.ficon{width:32px;height:32px;color:rgba(255,255,255,.35);margin-bottom:1rem;display:block}
+.fname{font-family:'Unbounded',sans-serif;font-weight:200;font-size:.8rem;letter-spacing:.12em;color:rgba(255,255,255,.45);margin-bottom:.5rem}
+.ftag{font-size:.55rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.2);margin-bottom:1.5rem}
+.flinks{display:flex;flex-direction:column;gap:.6rem}
+.fa2{font-size:.6rem;letter-spacing:.1em;color:rgba(255,255,255,.25);text-decoration:none;transition:color .25s}
+.fa2:hover{color:var(--m)}
+.fcopy{font-size:.52rem;color:rgba(255,255,255,.12);margin-top:.5rem}
+.fright{text-align:right}
+.fright .flinks{align-items:flex-end}
+@media(max-width:900px){
+  nav{padding:1rem 1.2rem}
+  .nright .na{display:none}
+  footer{grid-template-columns:1fr;gap:2rem}
+  .fright{text-align:left}
+  .fright .flinks{align-items:flex-start}
+}
+</style>
+</head>
+<body>
+<div id="dot"></div><div id="ring"></div>
+<nav id="nav">
+  <a href="index.html" style="display:flex;align-items:center;gap:.7rem;text-decoration:none;color:var(--g)">
+    <div class="nicon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 188 220" width="100%" height="100%"><path d="M0 0 C3.05625827 1.51700738 5.13735897 3.30989903 7.62109375 5.64453125 C10.27998288 8.11910211 12.87386698 10.47959008 15.74609375 12.70703125 C24.17742085 20.24140866 30.4076539 29.99972353 36.68359375 39.33203125 C37.09609375 38.79835937 37.50859375 38.2646875 37.93359375 37.71484375 C39.84453202 35.24939215 41.7627089 32.78974133 43.68359375 30.33203125 C44.32039062 29.51605469 44.9571875 28.70007813 45.61328125 27.859375 C47.61098667 25.32814584 49.63748507 22.82428392 51.68359375 20.33203125 C52.34875 19.51734375 53.01390625 18.70265625 53.69921875 17.86328125 C58.03387801 12.79012449 62.73859978 8.32763565 67.87109375 4.08203125 C68.4532666 3.57937744 69.03543945 3.07672363 69.63525391 2.55883789 C71.3515625 1.19140625 71.3515625 1.19140625 74.68359375 -0.66796875 C87.67538433 1.56424249 99.34720558 15.05668305 106.63671875 25.125 C110.47071497 31.13208186 113.4291244 37.56862321 115.68359375 44.33203125 C116.60398438 44.46738281 117.524375 44.60273437 118.47265625 44.7421875 C135.59571179 47.65415316 148.48578526 55.05433178 159.24609375 68.95703125 C162.19250505 73.21295868 163.89600048 76.12806626 163.68359375 81.33203125 C162.58151367 84.73011151 161.76261499 85.27935042 158.68359375 87.33203125 C151.70958438 88.11941941 151.70958438 88.11941941 147.99609375 85.26953125 C145.68359375 82.33203125 145.68359375 82.33203125 143.55859375 79.01953125 C137.6686136 70.58949716 128.28013115 66.15345037 118.68359375 63.33203125 C118.71839844 64.15703125 118.75320312 64.98203125 118.7890625 65.83203125 C119.31813364 88.40573315 112.51579277 109.42472695 96.91015625 126.07421875 C89.14577423 133.94757455 81.44266261 139.38460664 70.05859375 139.70703125 C63.39884753 139.64517602 58.8121174 138.66399697 53.68359375 134.33203125 C47.00968135 127.41154573 46.21348675 119.31834408 46.37109375 110.01953125 C47.94845681 91.40664717 59.13029292 75.47247697 72.87109375 63.53515625 C80.23216197 57.76898615 88.00190452 52.84000733 96.68359375 49.33203125 C95.0531795 39.01225017 88.17359341 30.29092184 80.68359375 23.33203125 C78.53911034 22.06968829 78.53911034 22.06968829 76.68359375 21.33203125 C59.44023245 34.47453585 48.29500037 55.8862457 37.68359375 74.33203125 C34.02835974 71.09290646 31.9284414 67.40705086 29.68359375 63.14453125 C23.20462016 51.27917586 15.38485358 40.3457697 6.74609375 29.95703125 C6.09181396 29.16292847 6.09181396 29.16292847 5.42431641 28.3527832 C2.80860887 25.29642413 0.24221565 23.20364992 -3.31640625 21.33203125 C-11.91369082 28.3145974 -18.15452523 35.96415952 -22.31640625 46.33203125 C-22.31640625 47.32203125 -22.31640625 48.31203125 -22.31640625 49.33203125 C-21.589375 49.66074219 -20.86234375 49.98945313 -20.11328125 50.328125 C-12.06335659 54.13635859 -5.24673767 58.76407267 1.68359375 64.33203125 C2.40289062 64.8734375 3.1221875 65.41484375 3.86328125 65.97265625 C16.25757901 75.8283629 25.13069108 91.87715125 27.68359375 107.33203125 C28.68219516 116.8187446 27.38993504 125.6239761 21.37109375 133.26953125 C20.48421875 133.95015625 19.59734375 134.63078125 18.68359375 135.33203125 C17.71421875 136.09515625 16.74484375 136.85828125 15.74609375 137.64453125 C9.54148668 140.96358962 1.5597729 140.20430785 -5.09375 138.70703125 C-19.34848124 133.66270297 -29.17609549 121.02392464 -35.70825195 107.91137695 C-41.40750202 95.89677764 -44.53782331 84.2557887 -44.37890625 70.89453125 C-44.37439453 70.16298828 -44.36988281 69.43144531 -44.36523438 68.67773438 C-44.35358773 66.89579706 -44.33565816 65.11390262 -44.31640625 63.33203125 C-57.98954236 66.17936545 -66.07175848 74.56868889 -74.31640625 85.33203125 C-76.31640625 87.33203125 -76.31640625 87.33203125 -80.19140625 87.70703125 C-83.37397413 87.63771943 -84.12564781 87.47876851 -86.75390625 85.45703125 C-89.36766724 81.90231631 -89.77617131 79.76057283 -89.31640625 75.33203125 C-87.91364648 72.97164634 -86.60039425 71.05191065 -84.87890625 68.95703125 C-84.42298096 68.38903809 -83.96705566 67.82104492 -83.49731445 67.23583984 C-74.25759098 55.96866621 -63.53842495 47.87554294 -48.81640625 46.14453125 C-46.06886592 45.78505793 -43.98502169 45.25413865 -41.31640625 44.33203125 C-38.49919095 40.66390194 -37.57626952 36.73078464 -36.31640625 32.33203125 C-31.76295988 22.93537375 -12.93702239 -3.73057475 0 0 Z M-27.31640625 67.33203125 C-25.82692531 86.93982505 -21.29526581 103.4898482 -6.51953125 117.51171875 C-2.74940799 120.62674967 0.44955181 122.48096738 5.49609375 122.14453125 C7.85049237 121.44290244 7.85049237 121.44290244 9.68359375 119.33203125 C11.24198405 109.40754563 8.38223528 100.21498217 3.109375 91.828125 C1.40451595 89.54305751 -0.39447642 87.43718766 -2.31640625 85.33203125 C-3.28513672 84.22601563 -3.28513672 84.22601563 -4.2734375 83.09765625 C-10.3742809 76.53274127 -17.53818236 71.70147176 -25.31640625 67.33203125 C-25.97640625 67.33203125 -26.63640625 67.33203125 -27.31640625 67.33203125 Z M79.484375 81.40625 C69.91003522 91.64518604 64.07751384 102.45504084 64.21484375 116.6171875 C64.48197023 119.33492791 64.48197023 119.33492791 66.015625 121.19921875 C67.7871731 122.62397452 67.7871731 122.62397452 70.87109375 122.39453125 C79.37461228 120.02469822 86.2514401 113.07715802 90.71679688 105.60253906 C97.68958093 93.16921722 101.37357655 81.74500527 100.68359375 67.33203125 C94.76282796 67.33203125 83.65814541 77.51847671 79.484375 81.40625 Z" fill="currentColor" transform="translate(94.31640625,79.66796875)"/></svg></div>
+    <div>
+      <div style="font-family:'Unbounded',sans-serif;font-weight:200;font-size:.82rem;letter-spacing:.18em;color:var(--k)">R V R</div>
+      <div style="font-size:.46rem;letter-spacing:.24em;text-transform:uppercase;color:var(--d);margin-top:.1rem">Super Speciality Centre</div>
+    </div>
+  </a>
+  <div class="nright">
+    <a href="about.html" class="na">About</a>
+    <a href="services.html" class="na act">Specialities</a>
+    <a href="doctors.html" class="na">Doctors</a>
+    <a href="index.html#ntfy" class="nb">Book Appointment</a>
+  </div>
+</nav>
+
+<div style="padding-top:5.5rem"></div>
+<section style="background:var(--g);padding:8rem 3rem">
+  <a href="services.html" style="font-size:.54rem;letter-spacing:.3em;text-transform:uppercase;color:rgba(255,255,255,.4);text-decoration:none;display:inline-flex;align-items:center;gap:.5rem;margin-bottom:2rem;animation:fadeIn .5s ease both">← All Specialities</a>
+  <div style="font-size:2.5rem;margin-bottom:1rem;animation:fadeUp .6s .1s ease both">🚨</div>
+  <h1 style="font-family:'Unbounded',sans-serif;font-weight:200;font-size:clamp(2.5rem,5.5vw,6rem);line-height:1.05;letter-spacing:-.025em;color:#fff;margin-bottom:1rem;animation:fadeUp .8s .2s ease both">Emergency Medicine</h1>
+  <p style="font-size:1rem;color:rgba(255,255,255,.55);max-width:480px;line-height:1.7;animation:fadeUp .7s .35s ease both">24/7 Emergency Care</p>
+</section>
+<section style="padding:8rem 3rem;display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:start;border-top:1px solid var(--wa)">
+  <div>
+    <p style="font-family:'Unbounded',sans-serif;font-weight:200;font-size:clamp(1rem,1.6vw,1.25rem);line-height:1.7;color:var(--k);margin-bottom:2rem" class="reveal">Round-the-clock emergency care with rapid response protocols and immediate specialist availability.</p>
+    <p style="font-size:.9rem;color:var(--d);line-height:1.9;margin-bottom:3rem" class="reveal">Medical emergencies do not follow a schedule. RVR Super Speciality Centre's Emergency department operates 24 hours a day, 7 days a week, 365 days a year with a fully trained emergency team and immediate access to specialist consultants across all departments. Our emergency protocols are designed for rapid triage, stabilisation and treatment — ensuring that critical patients receive the right care within the critical golden hour. Our emergency bay is equipped with advanced life support equipment, cardiac monitoring, ventilators and emergency medication, ready for any situation.</p>
+    <div style="display:flex;gap:1rem;flex-wrap:wrap" class="reveal">
+      <a href="index.html#ntfy" style="font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:#fff;background:var(--g);padding:.82rem 2.2rem;text-decoration:none;font-family:'DM Sans',sans-serif;font-weight:500;display:inline-block;transition:background .25s" data-hover>Book an Appointment</a>
+      <a href="doctors.html" style="font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--g);border:1.5px solid var(--g);padding:.8rem 2rem;text-decoration:none;font-family:'DM Sans',sans-serif;font-weight:500;display:inline-block;transition:background .25s,color .25s" data-hover>Meet the Doctors</a>
+    </div>
+  </div>
+  <div class="reveal-r">
+    <div style="font-size:.54rem;letter-spacing:.38em;text-transform:uppercase;color:var(--g);margin-bottom:1.5rem">Conditions We Treat</div>
+    <div style="display:flex;flex-direction:column;gap:2px"><div style="padding:1rem 1.2rem;background:var(--p);border-left:2px solid var(--g)"><div style="font-size:.8rem;font-weight:400;color:var(--k)">Stroke Emergency</div></div><div style="padding:1rem 1.2rem;background:var(--p);border-left:2px solid var(--g)"><div style="font-size:.8rem;font-weight:400;color:var(--k)">Cardiac Arrest & Chest Pain</div></div><div style="padding:1rem 1.2rem;background:var(--p);border-left:2px solid var(--g)"><div style="font-size:.8rem;font-weight:400;color:var(--k)">Seizures & Status Epilepticus</div></div><div style="padding:1rem 1.2rem;background:var(--p);border-left:2px solid var(--g)"><div style="font-size:.8rem;font-weight:400;color:var(--k)">Severe Trauma</div></div><div style="padding:1rem 1.2rem;background:var(--p);border-left:2px solid var(--g)"><div style="font-size:.8rem;font-weight:400;color:var(--k)">Breathing Difficulties</div></div><div style="padding:1rem 1.2rem;background:var(--p);border-left:2px solid var(--g)"><div style="font-size:.8rem;font-weight:400;color:var(--k)">Acute Poisoning</div></div><div style="padding:1rem 1.2rem;background:var(--p);border-left:2px solid var(--g)"><div style="font-size:.8rem;font-weight:400;color:var(--k)">High Fever & Sepsis</div></div><div style="padding:1rem 1.2rem;background:var(--p);border-left:2px solid var(--g)"><div style="font-size:.8rem;font-weight:400;color:var(--k)">Unconsciousness</div></div><div style="padding:1rem 1.2rem;background:var(--p);border-left:2px solid var(--g)"><div style="font-size:.8rem;font-weight:400;color:var(--k)">Severe Allergic Reactions</div></div><div style="padding:1rem 1.2rem;background:var(--p);border-left:2px solid var(--g)"><div style="font-size:.8rem;font-weight:400;color:var(--k)">Road Traffic Accidents</div></div></div>
+  </div>
+</section>
+<section style="background:var(--p);padding:5rem 3rem;border-top:1px solid var(--wa)">
+  <div style="font-size:.54rem;letter-spacing:.38em;text-transform:uppercase;color:var(--g);margin-bottom:1.5rem" class="reveal">Other Specialities</div>
+  <div style="display:flex;gap:.75rem;flex-wrap:wrap" class="reveal"><a href="service-neurology.html" style="font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--g);text-decoration:none;padding:.5rem 1rem;border:1px solid rgba(26,102,68,.25);display:inline-block;transition:background .25s,color .25s" data-hover>Neurology</a><a href="service-cardiology.html" style="font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--g);text-decoration:none;padding:.5rem 1rem;border:1px solid rgba(26,102,68,.25);display:inline-block;transition:background .25s,color .25s" data-hover>Cardiology</a><a href="service-diagnostics.html" style="font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--g);text-decoration:none;padding:.5rem 1rem;border:1px solid rgba(26,102,68,.25);display:inline-block;transition:background .25s,color .25s" data-hover>Advanced Diagnostics</a><a href="service-surgery.html" style="font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--g);text-decoration:none;padding:.5rem 1rem;border:1px solid rgba(26,102,68,.25);display:inline-block;transition:background .25s,color .25s" data-hover>Surgical Sciences</a><a href="service-radiology.html" style="font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--g);text-decoration:none;padding:.5rem 1rem;border:1px solid rgba(26,102,68,.25);display:inline-block;transition:background .25s,color .25s" data-hover>Radiology & Imaging</a><a href="service-pharmacy.html" style="font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--g);text-decoration:none;padding:.5rem 1rem;border:1px solid rgba(26,102,68,.25);display:inline-block;transition:background .25s,color .25s" data-hover>Pharmacy</a><a href="service-wellness.html" style="font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--g);text-decoration:none;padding:.5rem 1rem;border:1px solid rgba(26,102,68,.25);display:inline-block;transition:background .25s,color .25s" data-hover>Wellness & Prevention</a></div>
+</section>
+<section id="ntfy" style="background:var(--g);padding:7rem 3rem;display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:center">
+  <div>
+    <div style="font-size:.54rem;letter-spacing:.4em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:1.5rem" class="reveal">Opening April 23, 2026</div>
+    <h2 style="font-family:'Unbounded',sans-serif;font-weight:200;font-size:clamp(2rem,4vw,3.8rem);line-height:1.1;letter-spacing:-.02em;color:#fff;margin-bottom:1.5rem" class="reveal">Be the first<br>to book.</h2>
+    <p style="font-size:.9rem;color:rgba(255,255,255,.6);line-height:1.85;max-width:380px" class="reveal">Leave your WhatsApp number. We will message you on April 23, 2026 with our first appointment booking link — before anyone else.</p>
+  </div>
+  <div class="reveal-r">
+    <div style="font-size:.54rem;letter-spacing:.32em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:.9rem">Your WhatsApp number</div>
+    <form id="nsub" class="ntfm" style="display:flex;border:1.5px solid rgba(255,255,255,.2);margin-bottom:.75rem;transition:border-color .3s">
+      <input type="tel" class="ntip" id="ph" placeholder="+91 98765 43210" style="flex:1;background:transparent;border:none;outline:none;padding:.88rem 1.1rem;font-family:'DM Sans',sans-serif;font-size:.85rem;color:#fff">
+      <button type="submit" style="background:rgba(255,255,255,.15);border:none;padding:.88rem 1.6rem;cursor:none;font-family:'DM Sans',sans-serif;font-size:.58rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:#fff;transition:background .3s">Notify Me</button>
+    </form>
+    <div class="ntnt" style="font-size:.6rem;color:rgba(255,255,255,.3)">No spam. Only RVR launch updates.</div>
+    <div id="ok" style="display:none;font-size:.88rem;color:rgba(255,255,255,.8);padding:.5rem 0">✓ &nbsp;You are on the list. We will message you on April 23, 2026.</div>
+  </div>
+</section>
+<div id="footer-placeholder"></div>
+<script>
+const dot=document.getElementById('dot'),ring=document.getElementById('ring');
+let mx=0,my=0,rx=0,ry=0;
+document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;dot.style.left=mx+'px';dot.style.top=my+'px';},{passive:true});
+(function raf(){rx+=(mx-rx)*.12;ry+=(my-ry)*.12;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(raf);})();
+document.querySelectorAll('a,button,[data-hover]').forEach(el=>{
+  el.addEventListener('mouseenter',()=>document.body.classList.add('hov'));
+  el.addEventListener('mouseleave',()=>document.body.classList.remove('hov'));
+});
+const io=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);}});
+},{threshold:0.1,rootMargin:'0px 0px -30px 0px'});
+document.querySelectorAll('.reveal,.reveal-l,.reveal-r').forEach(el=>io.observe(el));
+const nav=document.getElementById('nav');
+if(nav)window.addEventListener('scroll',()=>nav.classList.toggle('sc',window.scrollY>50),{passive:true});
+function p2(n){return String(n).padStart(2,'0')}
+function tick(){
+  const ms=Math.max(0,new Date('2026-04-23T00:00:00+05:30')-Date.now());
+  const e1=document.getElementById('cd1'),e2=document.getElementById('cd2'),e3=document.getElementById('cd3'),e4=document.getElementById('cd4');
+  if(e1)e1.textContent=p2(Math.floor(ms/86400000));
+  if(e2)e2.textContent=p2(Math.floor(ms%86400000/3600000));
+  if(e3)e3.textContent=p2(Math.floor(ms%3600000/60000));
+  if(e4)e4.textContent=p2(Math.floor(ms%60000/1000));
+}
+tick();setInterval(tick,1000);
+function go(s){document.querySelector(s)?.scrollIntoView({behavior:'smooth'});}
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{
+    const t=document.querySelector(a.getAttribute('href'));
+    if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'});}
+  });
+});
+const nsub=document.getElementById('nsub');
+if(nsub)nsub.addEventListener('submit',e=>{
+  e.preventDefault();
+  const ph=document.getElementById('ph');
+  if(ph&&ph.value.trim().length>=8){
+    document.querySelector('.ntfm').style.display='none';
+    document.querySelector('.ntnt').style.display='none';
+    document.getElementById('ok').style.display='block';
+  }
+});
+</script>
+<script src="footer-loader.js"></script>
+</body>
+</html>
